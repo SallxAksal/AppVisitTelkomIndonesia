@@ -12,68 +12,70 @@
         android:gravity="center">
 
         <!-- Logo Telkom -->
+
+        <!-- Card Box -->
+
         <ImageView
             android:id="@+id/logoTelkom"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/telkom"
+            android:layout_marginBottom="16dp"
             android:contentDescription="Logo Telkom Indonesia"
-            android:layout_marginBottom="16dp" />
+            android:src="@drawable/telkom" />
 
-        <!-- Card Box -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@drawable/login_box_bg"
-            android:padding="24dp"
-            android:elevation="4dp">
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
                 android:text="Task Management System"
                 android:textAlignment="center"
                 android:textColor="#E60012"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:paddingBottom="8dp" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
                 android:text="Silakan login untuk mengakses dashboard"
                 android:textAlignment="center"
-                android:textSize="13sp"
                 android:textColor="#555"
-                android:paddingBottom="16dp" />
+                android:textSize="13sp" />
 
             <!-- Username -->
             <EditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
                 android:hint="Masukkan username"
-                android:inputType="textPersonName"
-                android:layout_marginBottom="12dp" />
+                android:inputType="textPersonName" />
 
             <!-- Password -->
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:hint="Masukkan password"
-                android:inputType="textPassword"
-                android:layout_marginBottom="16dp" />
+                android:inputType="textPassword" />
 
             <!-- Tombol Login -->
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
                 android:backgroundTint="#E60012"
+                android:text="Login"
                 android:textColor="#fff" />
 
             <!-- Tombol Register -->
@@ -81,12 +83,12 @@
                 android:id="@+id/tvRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
                 android:text="Belum punya akun? Register"
                 android:textColor="#E60012"
-                android:textSize="14sp"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:padding="6dp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
