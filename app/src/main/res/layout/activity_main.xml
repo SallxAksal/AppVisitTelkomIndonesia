@@ -2,95 +2,91 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@drawable/bg_telkom"
     android:padding="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/card_bg"
+        android:elevation="8dp"
+        android:padding="24dp"
+        android:layout_margin="16dp">
 
         <!-- Logo Telkom -->
-
-        <!-- Card Box -->
-
         <ImageView
             android:id="@+id/logoTelkom"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="Logo Telkom Indonesia"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Logo Telkom"
             android:src="@drawable/telkom" />
 
-        <LinearLayout
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="serif"
+            android:text="Selamat Datang"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WITEL BANDUNG"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Garis Pemisah -->
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="#E60000" />
+
+        <!-- Tombol Menu -->
+        <Button
+            android:id="@+id/btnVisit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_box_bg"
-            android:elevation="4dp"
-            android:orientation="vertical"
-            android:padding="24dp">
+            android:text="📋 Form Input Visit"
+            android:background="@drawable/btn_outline"
+            android:textColor="#212121"
+            android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Task Management System"
-                android:textAlignment="center"
-                android:textColor="#E60012"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Form Input Survey"
+            android:background="@drawable/btn_outline"
+            android:textColor="#212121"
+            android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="16dp"
-                android:text="Silakan login untuk mengakses dashboard"
-                android:textAlignment="center"
-                android:textColor="#555"
-                android:textSize="13sp" />
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📂 Lihat Data"
+            android:background="@drawable/btn_outline"
+            android:textColor="#212121"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Username -->
-            <EditText
-                android:id="@+id/etUsername"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:hint="Masukkan username"
-                android:inputType="textPersonName" />
-
-            <!-- Password -->
-            <EditText
-                android:id="@+id/etPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="Masukkan password"
-                android:inputType="textPassword" />
-
-            <!-- Tombol Login -->
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#E60012"
-                android:text="Login"
-                android:textColor="#fff" />
-
-            <!-- Tombol Register -->
-            <TextView
-                android:id="@+id/tvRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:padding="6dp"
-                android:text="Belum punya akun? Register"
-                android:textColor="#E60012"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Export ke PDF"
+            android:background="@drawable/btn_gold"
+            android:textColor="#212121" />
     </LinearLayout>
 </ScrollView>
